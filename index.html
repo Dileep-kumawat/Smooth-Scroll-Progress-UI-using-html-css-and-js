@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Progress UI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* Progress Bar */
+        #bar {
+            position: fixed;
+            height: 12px;
+            width: 0;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            border-radius: 0 8px 8px 0;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            transition: width 0.15s ease-out;
+        }
+
+        /* Floating progress label */
+        #progress-label {
+            position: fixed;
+            top: 18px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        main {
+            height: 300vh;
+            padding: 40px;
+        }
+
+        main p {
+            max-width: 700px;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bar"></div>
+    <div id="progress-label">0%</div>
+
+    <header>
+        <h1>Smooth Scroll Progress Demo</h1>
+    </header>
+
+    <main>
+        <p>
+            Scroll down to see the beautiful scroll progress indicator update smoothly.
+            The UI has been enhanced with modern gradients, glassmorphism, and clean
+            typography to create a visually appealing experience.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
