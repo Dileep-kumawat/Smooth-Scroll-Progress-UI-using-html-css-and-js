@@ -19,7 +19,7 @@ This UI features a smooth animated progress bar and a floating percentage label 
 
 ## 🌐 Live Demo
 
-> 🔗 **Live Site:** []()
+> 🔗 **Live Site:** [https://dileep-kumawat.github.io/Smooth-Scroll-Progress-UI-using-html-css-and-js/](https://dileep-kumawat.github.io/Smooth-Scroll-Progress-UI-using-html-css-and-js/)
 
 ---
 
@@ -79,7 +79,7 @@ label.textContent = percent + "%";
 ### Clone the repo
 
 ```bash
-git clone 
+git clone https://github.com/Dileep-kumawat/Smooth-Scroll-Progress-UI-using-html-css-and-js.git
 ```
 
 ### Open in browser
